@@ -1,6 +1,5 @@
 app.controller('MapCtrl', ['NgMap','$scope', function (NgMap, $scope) {
     var vm = this;
-    vm.types = "['establishment']";
     vm.placeChanged = function () {
         vm.place = this.getPlace();
         $scope.places.push({
